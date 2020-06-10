@@ -1,0 +1,32 @@
+import { Categories } from "../types";
+
+export const categoryTokens: Record<Categories, string[]> = {
+  [Categories.gas]: ["gas", "pepper", "spray", "mace"],
+  [Categories.shooting_rubber]: ["rubber", "non-lethal", "beanbag", "projectile"],
+  [Categories.shooting_gun]: ["gun", "shot", "shoot", "shooting", "fire"],
+  [Categories.assault]: [
+    "push",
+    "shove",
+    "choke",
+    "injure",
+    "beat",
+    "punch",
+    "ram",
+    "shoving",
+    "shove",
+    "throw",
+    "tackle",
+    "assault",
+    "drag",
+    "force",
+    "hit",
+    "violent",
+    "violence",
+    "slam",
+    "pull",
+    "grab",
+    "attack",
+  ],
+  [Categories.arrest]: ["arrest"],
+  [Categories.other]: [],
+};
