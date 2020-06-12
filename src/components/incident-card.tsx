@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { useData } from "./data-context";
 import { Incident } from "../types";
 import { findTweetId } from "../utils/data";
 

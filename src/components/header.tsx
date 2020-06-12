@@ -47,7 +47,11 @@ export const Header = () => {
       </VideoWrapper> */}
       <CenterWrapper>
         <CenteredContent>
-          <IntroText>Since May 29, 2020 we the people have recorded... </IntroText>
+          <IntroText>
+            Since May 29, 2020
+            <span style={{ color: "yellow" }}>we the people</span> have
+            recorded...
+          </IntroText>
           <FlexRowCenter>
             <Count>{totalCount}</Count>
             <CountText>
@@ -56,7 +60,6 @@ export const Header = () => {
           </FlexRowCenter>
 
           <IntroText>including... </IntroText>
-
         </CenteredContent>
       </CenterWrapper>
       <SubCountsWrapper>
@@ -71,14 +74,14 @@ export const Header = () => {
   );
 };
 
-const Video = styled.video`
-  width: 100%;
-`;
+// const Video = styled.video`
+//   width: 100%;
+// `;
 
-const VideoWrapper = styled.div`
-  width: 100%;
-  overflow: hidden;
-`;
+// const VideoWrapper = styled.div`
+//   width: 100%;
+//   overflow: hidden;
+// `;
 
 const IntroText = styled.div`
   text-transform: uppercase;
@@ -86,15 +89,15 @@ const IntroText = styled.div`
   padding: 64px;
 `;
 
-const CenteredText = styled.div`
-  display: flex;
-  justify-content: center;
-  font-size: 36px;
-  padding: calc(20vh) 64px;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 700px;
-`;
+// const CenteredText = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   font-size: 36px;
+//   padding: calc(20vh) 64px;
+//   text-align: center;
+//   margin: 0 auto;
+//   max-width: 700px;
+// `;
 
 const CenterWrapper = styled.div`
   display: flex;

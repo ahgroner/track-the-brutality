@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { mobileRules } from "../constants/style";
 import { useData } from "./data-context";
 import { Categories } from "../types";
 // import CrowdBannerVid from "../assets/drone_720_trimmed.mp4";
@@ -53,7 +52,7 @@ export const Filter = () => {
         cityStateCounts[cityStateB] - cityStateCounts[cityStateA]
     )
     .map((cityState) => ({
-      text: `${cityState}, (${cityStateCounts[cityState]})`,
+      text: `${cityState} (${cityStateCounts[cityState]})`,
       onClick: () => {
         setCityState(cityState);
       },

@@ -56,7 +56,7 @@ export const DataContextProvider = ({ children }: any) => {
   );
 
   const groupedByCityState = useMemo(
-    () => _.groupBy(categoryFilteredIncidents, (i) => `${i.city}, ${i.state}`),
+    () => _.groupBy(categoryFilteredIncidents, (i) => i.cityState),
     [categoryFilteredIncidents]
   );
 

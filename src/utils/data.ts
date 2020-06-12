@@ -33,12 +33,15 @@ export const findTweetId = (incident: Incident): string | undefined => {
   return tweet && tweet.substring(tweet.lastIndexOf("/") + 1);
 };
 
+export const getCityState = (incident: Incident): string => `${incident.city}, ${incident.state}`;
+
 export const cleanData = (incidents: Incident[]): Incident[] =>
   incidents.map((incident) => {
     return {
       ...incident,
       categories: getCategories(incident),
       moment_date: getMomentDate(incident),
+      cityState: getCityState(incident),
     };
   });
 
