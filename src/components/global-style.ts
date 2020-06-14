@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
       background: black;
       color: white;
       font-family: 'Rubik', sans-serif;
+      margin: 0;
   }
   .EmbeddedTweet {
     border: none;

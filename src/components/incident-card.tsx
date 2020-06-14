@@ -39,6 +39,7 @@ const MediaWrapper = styled.div`
   min-width: 40vw;
   ${mobileRules} {
     min-width: 100vw;
+    padding-right: 0;
   }
 `;
 
@@ -60,7 +61,7 @@ const Left = styled.div`
 const DescriptionText = styled.div`
   font-size: 72px;
   ${mobileRules} {
-    font-size: 42px;
+    font-size: 32px;
   }
   font-weight: 500;
   padding-left: 48px;

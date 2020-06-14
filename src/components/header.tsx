@@ -48,17 +48,18 @@ export const Header = () => {
       <CenterWrapper>
         <CenteredContent>
           <IntroText>
-            Since May 29, 2020
-            <span style={{ color: "yellow" }}>we the people</span> have
-            recorded...
+            Since May 26, 2020
+            <span> </span>
+            <span style={{ color: "yellow" }}>we the people</span>
+            <span> </span>
+            have recorded...
           </IntroText>
-          <FlexRowCenter>
+          <CountWrapper>
             <Count>{totalCount}</Count>
             <CountText>
               instances of police brutality against protesters
             </CountText>
-          </FlexRowCenter>
-
+          </CountWrapper>
           <IntroText>including... </IntroText>
         </CenteredContent>
       </CenterWrapper>
@@ -87,6 +88,9 @@ const IntroText = styled.div`
   text-transform: uppercase;
   text-align: center;
   padding: 64px;
+  ${mobileRules} {
+    padding: 32px;
+  }
 `;
 
 // const CenteredText = styled.div`
@@ -108,11 +112,16 @@ const CenteredContent = styled.div`
   width: 1000px;
 `;
 
-const FlexRowCenter = styled.div`
+const CountWrapper = styled.div`
   display: flex;
   flex-flow: row;
   align-items: center;
   margin-bottom: 32px;
+  ${mobileRules} {
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+  }
 `;
 
 const Count = styled.div`
@@ -143,6 +152,9 @@ const SubCountsWrapper = styled.div`
   flex-wrap: wrap;
   margin-bottom: 160px;
   justify-content: space-around;
+  ${mobileRules} {
+    margin-bottom: 36px;
+  }
 `;
 
 const SubCountWrapper = styled.div`
@@ -150,6 +162,7 @@ const SubCountWrapper = styled.div`
   flex-flow: row;
   align-items: center;
   padding: 16px 0;
+  max-width: 100vw;
 `;
 
 const SubCount = styled.div`
@@ -161,7 +174,7 @@ const SubCount = styled.div`
   text-align: right;
   text-shadow: 1px 4px red;
   ${mobileRules} {
-    font-size: 48px;
+    font-size: 36px;
   }
 `;
 
@@ -171,6 +184,7 @@ const SubCountText = styled(CountText)`
   width: 340px;
   max-width: 340px;
   ${mobileRules} {
-    font-size: 32px;
+    font-size: 24px;
+    word-break: break-word;
   }
 `;

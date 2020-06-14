@@ -2,8 +2,15 @@ import { Categories } from "../types";
 
 export const categoryTokens: Record<Categories, string[]> = {
   [Categories.gas]: ["gas", "pepper", "spray", "mace"],
-  [Categories.shooting_rubber]: ["rubber", "non-lethal", "beanbag", "projectile"],
-  [Categories.shooting_gun]: ["gun", "shot", "shoot", "shooting", "fire"],
+  [Categories.shooting_rubber]: [
+    "rubber",
+    "non-lethal",
+    "beanbag",
+    "projectile",
+    "stun",
+    "flashbang",
+  ],
+  [Categories.shooting_gun]: ["shot", "shoot", "shooting", "fire"],
   [Categories.assault]: [
     "push",
     "shove",
